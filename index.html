@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Lover</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HERO WRAPPER START ================= -->
+    <section class="hero-wrapper">
+      <!-- TOP BAR -->
+      <div class="top-bar text-white py-2 px-3">
+        <div class="container d-flex justify-content-between">
+          <div>
+            <span>
+              <img src="images/clock.png" alt="clock" width="16" height="16" />
+              Open hour - 10 am - 11 pm
+            </span>
+
+            <span class="ms-4">
+              <img src="images/phone.png" alt="phone" width="16" height="16" />
+              +00 123 456 789
+            </span>
+
+            <span class="ms-4">
+              <img src="images/mail.png" alt="mail" width="16" height="16" />
+              support@example.com
+            </span>
+          </div>
+          <div>
+            <span class="ms-3">ⓕ</span>
+            <span class="ms-3">ⓘ</span>
+            <span class="ms-3">ⓣ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">
+            <img src="./images/logo.png" alt="Food Lover" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  MENU
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Main Course</a></li>
+                  <li><a class="dropdown-item" href="#">Starter</a></li>
+                  <li><a class="dropdown-item" href="#">Dessert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RESERVATION</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center" style="min-height: 75vh">
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 text-white">
+              <h2>Taste the flavours of</h2>
+              <h1 class="south">SOUTH INDIA</h1>
+
+              <p>
+                Order from a weekly menu of tasty meals at the click of a
+                button. Say goodbye to meal planning and grocery shopping!
+              </p>
+
+              <button class="btn btn-orange me-4">Book Table</button>
+              <button class="btn btn-outline-light">Our Menu</button>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 text-center">
+              <img
+                src="images/hero-food.png"
+                class="img-fluid hero-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- ================= HERO WRAPPER END ================= -->
+    <!--about section-->
+    <section class="about-section">
+      <div class="about-container">
+        <!-- Left Content -->
+        <div class="about-content">
+          <span class="about-label">About</span>
+          <h2>FOOD LOVER</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscinit. Vestibulum vel
+            sum ullamcorper, suscipit eros quis, pellentesqsapien. Sed ventis
+            nisl a auris laoreet, at tincidunt lectus volutpat. Etiam semper
+            ligula sollicitudi ante vehicula pellentesqsapien.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscinit. Vestibulum vel
+            sum ullamcorper, suscipit eros quis, pellentesqsapien. Sed ventis
+            nisl a auris laoreet, at tincidunt lectus volutpat. Etiam semper
+            ligula sollicitudi ante vehicula pellentesqsapien.
+          </p>
+
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+
+        <!-- Right Image Area -->
+        <div class="about-images">
+          <div class="about-bg">
+            <img src="./images/about1.jpg" alt="Background image" />
+          </div>
+
+          <div class="about-main">
+            <img src="./images/about2.jpg" alt="Food image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU SECTION START ================= -->
+    <section class="menu-section py-5">
+      <div class="container text-center">
+        <!-- ICON + TITLE -->
+        <div class="menu-header mb-4">
+          <img src="images/menu-icon.png" alt="icon" class="menu-icon" />
+          <p class="menu-brand">Food Lover</p>
+          <h2 class="menu-title">RESTAURANT MENU</h2>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="menu-filters mb-5">
+          <button class="filter-btn active" data-index="0">All Dishes</button>
+          <button class="filter-btn" data-index="1">Dinner</button>
+          <button class="filter-btn" data-index="2">Lunch</button>
+          <button class="filter-btn" data-index="3">Drinks</button>
+          <button class="filter-btn" data-index="4">Starters</button>
+        </div>
+        <script>
+          const filterBtns = document.querySelectorAll(".filter-btn");
+
+          filterBtns.forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+              // Remove active from all buttons
+              filterBtns.forEach((b) => b.classList.remove("active"));
+              btn.classList.add("active");
+
+              // Show correct slide
+              current = parseInt(btn.getAttribute("data-index"));
+              showSlide(current);
+            });
+          });
+        </script>
+
+        <!-- FOOD CARDS -->
+        <div class="row justify-content-center">
+          <!-- CARD 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="menu-card">
+              <img src="images/menu1.jpg" class="img-fluid" alt="" />
+              <h5>Steak</h5>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="menu-card">
+              <img src="images/menu2.jpg" class="img-fluid" alt="" />
+              <h5>Kabab</h5>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="menu-card">
+              <img src="images/menu3.jpg" class="img-fluid" alt="" />
+              <h5>Chicken</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= MENU SECTION END ================= -->
+
+    <!-- START SPECIAL MENU SECTION -->
+    <section class="special-menu py-5">
+      <div class="container text-center">
+        <p class="section-subtitle">Deals Today</p>
+        <h2 class="section-title">TODAY SPECIAL DISH</h2>
+
+        <div class="row mt-5 align-items-end">
+          <!-- Item 1 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="images/chicken.png"
+              class="img-fluid dish-img"
+              alt="Chicken Malai"
+            />
+            <h4 class="dish-title">Chicken Malai</h4>
+            <p class="dish-desc">
+              Lorem ipsum dolor sit amet, consectetur Vestibulum vel ipsum
+            </p>
+            <p class="dish-price">Starts at <span>₹249</span></p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="images/aloo.png"
+              class="img-fluid dish-img"
+              alt="Aloo Kofta"
+            />
+            <h4 class="dish-title">Aloo Kofta</h4>
+            <p class="dish-desc">
+              Lorem ipsum dolor sit amet, consectetur Vestibulum vel ipsum
+            </p>
+            <p class="dish-price">Starts at <span>₹299</span></p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="images/noodles.png"
+              class="img-fluid dish-img"
+              alt="Hakka Noodles"
+            />
+            <h4 class="dish-title">Hakka Noodles</h4>
+            <p class="dish-desc">
+              Lorem ipsum dolor sit amet, consectetur Vestibulum vel ipsum
+            </p>
+            <p class="dish-price">Starts at <span>₹209</span></p>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="menu-dots mt-4">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <!-- END SPECIAL MENU SECTION -->
+
+    <!-- BOOK TABLE SECTION -->
+    <section class="book-table">
+      <div class="book-overlay">
+        <div class="book-content">
+          <h2>Book Your Table</h2>
+
+          <form>
+            <input type="text" placeholder="Name" class="form-control mb-3" />
+            <input type="email" placeholder="Email" class="form-control mb-3" />
+            <input type="date" class="form-control mb-3" />
+            <textarea
+              placeholder="Comments"
+              class="form-control mb-4"
+              rows="5"
+            ></textarea>
+
+            <button class="book-btn">Book Now!</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--Offer section-->
+    <section class="offers-section">
+      <div class="offers-container">
+        <!-- LEFT SIDE -->
+        <div class="offers-left">
+          <span class="section-label">From the Menu</span>
+          <h2>SPECIAL OFFERS</h2>
+
+          <!-- Offer Item -->
+          <div class="offer-card">
+            <img src="./images/fish.jpg" alt="Fish Curry" />
+            <div class="offer-info">
+              <h4>Fish Curry</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur Vesti ullamcorper.</p>
+            </div>
+            <div class="offer-price">
+              <span class="new">₹249</span>
+              <span class="old">₹599</span>
+            </div>
+          </div>
+
+          <!-- Offer Item -->
+          <div class="offer-card">
+            <img src="./images/chicken.jpg" alt="Chicken Tikka" />
+            <div class="offer-info">
+              <h4>Chicken Tikka</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur Vesti ullamcorper.</p>
+            </div>
+            <div class="offer-price">
+              <span class="new">₹499</span>
+              <span class="old">₹999</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="offers-right">
+          <div class="image-grid">
+            <img src="./images/fish.jpg" />
+            <img src="./images/chicken.jpg" />
+            <img src="./images/menu3.jpg" />
+            <img src="./images/menu1.jpg" />
+          </div>
+
+          <div class="center-circle">🍴</div>
+        </div>
+      </div>
+    </section>
+
+    <!--feedback section-->
+    <section class="feedback-section">
+      <div class="overlay"></div>
+
+      <div class="feedback-container">
+        <div class="feedback-header">
+          <span class="feedback-label">Food Lover</span>
+          <h2>CUSTOMER FEEDBACK</h2>
+        </div>
+
+        <div class="feedback-cards">
+          <!-- Card 1 -->
+          <div class="feedback-card">
+            <span class="quote">”</span>
+            <p>
+              Nunc ullamcorper augue nec accumsan porta. Ut lacinia fgiat
+              viverra. Ut dictum turpis in ipsum sagittis finibus.
+            </p>
+            <h4>Frinton Van</h4>
+            <img src="./images/user1.jpg" class="avatar" />
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feedback-card">
+            <span class="quote">”</span>
+            <p>
+              Nunc ullamcorper augue nec accumsan porta. Ut lacinia fgiat
+              viverra. Ut dictum turpis in ipsum sagittis finibus.
+            </p>
+            <h4>Anna Van</h4>
+            <img src="./images/user2.jpg" class="avatar" />
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feedback-card">
+            <span class="quote">”</span>
+            <p>
+              Nunc ullamcorper augue nec accumsan porta. Ut lacinia fgiat
+              viverra. Ut dictum turpis in ipsum sagittis finibus.
+            </p>
+            <h4>Filipe Van</h4>
+            <img src="./images/user3.jpg" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--stats-newsletter-->
+    <section class="stats-newsletter">
+      <!-- STATS SECTION -->
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-circle">220+</div>
+          <h4>Best Dishes</h4>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-circle">50+</div>
+          <h4>Awards Won</h4>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-circle">80+</div>
+          <h4>Our Chefs</h4>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-circle">200+</div>
+          <h4>Daily Customers</h4>
+        </div>
+      </div>
+
+      <!-- NEWSLETTER SECTION -->
+      <div class="newsletter">
+        <div class="newsletter-content">
+          <div class="newsletter-icon">✉️</div>
+
+          <h2>Subscribe to our Newsletter</h2>
+          <p>
+            Lorem sit amet, ectetr iscinitt. Vestibulum vel sum er, susciperios
+            quis by lorem.
+          </p>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your Email" />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <small>Your Email is safe with us. We won’t spam you.</small>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- ABOUT -->
+        <div class="footer-col">
+          <h2 class="logo">
+            <img src="./images/logo.png" alt="Food Lover" />
+          </h2>
+
+          <p>
+            Lorem sit amet, ectetr iscinitt. Vestibulum vel sum er, susciperios
+            quis by lorem.
+          </p>
+          <p>
+            Sed ventis nisl a auris laoreet, at ncidnt lectus volutpat. Etiam...
+          </p>
+          <a href="#" class="footer-link">Read More →</a>
+        </div>
+
+        <!-- OPENING HOURS -->
+        <div class="footer-col">
+          <h3>Opening Hours</h3>
+          <ul class="hours">
+            <li><span>MONDAY</span> : Closed</li>
+            <li><span>TUE - FRI</span> : 10 am - 9 pm</li>
+            <li><span>SATURDAY</span> : 10 am - 11 pm</li>
+            <li><span>SUNDAY</span> : 10 am - 12 pm</li>
+          </ul>
+        </div>
+
+        <!-- TWEETS -->
+        <div class="footer-col">
+          <h3>Latest Tweets</h3>
+
+          <div class="tweet">
+            <span class="icon">
+              <img src="./images/twitter.png" alt="Twitter" width="20" />
+            </span>
+            <p>
+              Sed ventis nisl a au at ncidnt ctus volutpat.
+              <a href="#">https://twitter.com</a>
+              <span class="time"> 2 Hours ago</span>
+            </p>
+          </div>
+
+          <div class="tweet">
+            <span class="icon">
+              <img src="./images/twitter.png" alt="Twitter" width="20" />
+            </span>
+            <p>
+              Sed ventis nisl a au at ncidnt ctus volutpat.
+              <a href="#">https://twitter.com</a>
+              <span class="time">5 Hours ago</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="footer-col">
+          <h3>Instragram</h3>
+          <div class="insta-grid">
+            <img src="./images/menu1.jpg" />
+            <img src="./images/menu2.jpg" />
+            <img src="./images/chicken.jpg" />
+            <img src="./images/menu3.jpg" />
+            <img src="./images/chicken.png" />
+            <img src="./images/fish.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">Copyright 2022 © Food Lover Restaurant</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
